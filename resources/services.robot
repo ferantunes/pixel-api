@@ -6,7 +6,7 @@ Resource   credentials.robot
 Library    RequestsLibrary
 Library    Collections
 Library    OperatingSystem
-
+Library    DatabaseLibrary
 Library    libs/db.py
 
 ***Keywords***
