@@ -18,6 +18,11 @@ pipeline {
                 echo 'Executando testes de regressão'
                 sh 'robot -d ./log tests/'
             }
+            post {
+                always {
+                    robot 'log'
+                }
+            }
         }
         stage('UAT') {
             steps {
